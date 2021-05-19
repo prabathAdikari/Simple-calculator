@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="/my calculator/calculator.css">
+  </head>
+  <body>
+    <h1>SIMPLE CALCULATOR.</h1>
+    <form name="calculator">
+      <table>
+        <tr>
+          <td colspan="6"><input type="text" name="display" id="display" disabled /></td>
+          <!--To insert the display Area-->
+
+        </tr>
+
+        <tr>
+          <td>
+            <input
+              type="button"
+              class="right"
+              value="1"
+              onclick="calculator.display.value +='1' "
+            />
+          </td>
+          <!--to insert Fist number and the Button.-->
+
+          <td>
+            <input
+              type="button"
+              value="2"
+              onclick="calculator.display.value +='2' "
+            />
+          </td>
+          <!--to insert second number and the Button.-->
+
+          <td>
+            <input
+              type="button"
+              value="3"
+              onclick="calculator.display.value +='3'"
+            />
+          </td>
+          <!--to insert Third  number and the Button.-->
+
+          <td>
+            <input
+              type="button"
+              class="operator"
+              value="+"
+              onclick="calculator.display.value +='+'"
+            />
+          </td>
+          <!--to insert "+" sign and the Button.-->
+        </tr>
+        <td>
+          <input
+            type="button"
+            class="right"
+            value="4"
+            onclick="calculator.display.value +='4'"
+          />
+        </td>
+        <!--to insert Fourth  number and the Button.-->
+        <td>
+          <input
+            type="button"
+            value="5"
+            onclick="calculator.display.value +='5'"
+          />
+        </td>
+        <!--to insert Fifth  number and the Button.-->
+        <td>
+          <input
+            type="button"
+            value="6"
+            onclick="calculator.display.value +='6'"
+          />
+        </td>
+        <!--to insert Sixth  number and the Button.-->
+        <td>
+          <input
+            type="button"
+            class="operator"
+            value="-"
+            onclick="calculator.display.value +='-'"
+          />
+        </td>
+        <!--to insert "-" sign and the Button.-->
+        <tr>
+          <td>
+            <input
+              type="button"
+              class="right"
+              value="7"
+              onclick="calculator.display.value +='7'"
+            />
+          </td>
+          <!--to insert Seventh  number and the Button.-->
+          <td>
+            <input
+              type="button"
+              value="8"
+              onclick="calculator.display.value +='8'"
+            />
+          </td>
+          <!--to insert Eight  number and the Button.-->
+          <td>
+            <input
+              type="button"
+              value="9"
+              onclick="calculator.display.value +='9'"
+            />
+          </td>
+          <!--to insert Ninth number and the Button.-->
+          <td>
+            <input
+              type="button"
+              class="operator"
+              value="x"
+              onclick="calculator.display.value +='*'"
+            />
+          </td>
+          <!--to insert "*" sign  and the Button.-->
+        </tr>
+<tr>
+    <td>
+        <input
+        type="reset"
+        class="right"
+        value="C"
+        onclick="calculator.display.value +=' '"
+      />
+    </td>
+    <!--to insert Clear "c" Mark  and the Button.--> 
+    </td>
+    <td>
+        <input
+          type="button"
+          value="0"
+          onclick="calculator.display.value +='0'"
+        />
+      </td>
+      <!--to insert Zero and the Button.-->
+
+      <td>
+        <input
+          type="button"
+          value="/"
+          onclick="calculator.display.value +='/'"
+        />
+      </td>
+      <!--to insert Ninth number and the Button.-->
+      <td>
+        <input
+          type="button"
+          class="operator"
+          value="="
+          onclick="calculator.display.value =eval(calculator.display.value)"
+        />
+      </td>
+      <!--to insertEqual mark "=" and the Button.-->
+</tr>
+
+      </table>
+    </form>
+  </body>
+</html>
